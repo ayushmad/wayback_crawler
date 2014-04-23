@@ -2,13 +2,15 @@ Wayback Crawler
 ===============
 
 This package crawls and create a graphs of webpages, over a time.
-The package use wayback machine to get the old crawled pages.
+The package use wayback machine to get the older snapshots of the page.
 
 
 Dependencies
 ------------
 [Internet Archive CDX API][dl]
 [dl]: https://github.com/internetarchive/wayback/blob/master/wayback-cdx-server/README.md
+[LXML][]
+[LXML]:http://lxml.de/index.html#documentation
 
 
 Classes

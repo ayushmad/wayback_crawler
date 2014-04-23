@@ -1,6 +1,7 @@
 import urllib
 import urllib2
-from bs4 import BeautifulSoup
+import lxml.html
+import StringIO
 
 class Page:
     """
@@ -23,9 +24,13 @@ class Page:
     def get_urls(self):
         url_list = [];
         result = self.get_content();
-        my_soup = BeautifulSoup(result);
-        for a in my_soup.find_all('a', href=True):
-            url_list.append(a['href']);
+        html_root = lxml.html.parse(StringIO.StringIO(result)).getroot();
+        for link in html_root.iterlinks():
+            # lxml keeps the link as the third text
+            selected_link_type = link[1];
+            if selected_link_type != None: 
+                selected_url = link[2];
+                url_list.append(selected_url);
         return url_list;
 
 

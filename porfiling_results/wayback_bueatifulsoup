@@ -1,0 +1,406 @@
+Need to go to 2818 links
+---------------Writer thread id
+<Thread(Writer Thread, started daemon 140206900496128)>
+None
+
+Clock type: cpu
+Ordered by: totaltime, desc
+
+name                                    #n         tsub      ttot      tavg
+..eCrawlerThreaded.get_urls_in_page_on  2818       0.043350  2089.348  0.741429
+..wler/Page.py:23 WayBackPage.get_urls  2818       0.382576  2089.161  0.741363
+.._init__.py:80 BeautifulSoup.__init__  2818       0.141809  1945.809  0.690493
+..py:72 LXMLTreeBuilder.prepare_markup  5636       0.062425  1307.172  0.231933
+..it.py:232 EncodingDetector.encodings  5636       0.044042  1307.062  0.231913
+..ages/bs4/dammit.py:30 chardet_dammit  435        0.006957  1306.666  3.003829
+..ckages/chardet/__init__.py:20 detect  435        0.009658  1306.659  3.003813
+..etector.py:61 UniversalDetector.feed  435        0.019410  1306.573  3.003615
+..oupprober.py:55 MBCSGroupProber.feed  508        0.063004  1263.651  2.487502
+../__init__.py:206 BeautifulSoup._feed  2818       0.023857  638.2080  0.226475
+..er/_lxml.py:221 LXMLTreeBuilder.feed  2818       0.033376  638.1204  0.226444
+..r.py:63 SingleByteCharSetProber.feed  3810       363.0041  493.6479  0.129566
+..harsetprober.py:52 GB2312Prober.feed  848        189.9668  423.4043  0.499297
+...py:40 CodingStateMachine.next_state  118792222  281.0279  311.8194  0.000003
+..r/_lxml.py:126 LXMLTreeBuilder.start  1982511    40.55691  188.9600  0.000095
+..det/utf8prober.py:50 UTF8Prober.feed  254        60.40387  166.0196  0.653620
+..py:324 BeautifulSoup.handle_starttag  1982511    18.97831  136.2133  0.000069
+..ement.py:1165 BeautifulSoup.find_all  5685       0.065126  115.0789  0.020243
+..ement.py:478 BeautifulSoup._find_all  5685       8.728694  115.0138  0.020231
+..tatemachine.py:30 CodingStateMachine  213        41.82101  114.7934  0.538936
+../element.py:1525 SoupStrainer.search  4865801    12.12910  98.12044  0.000020
+..der/_lxml.py:175 LXMLTreeBuilder.end  1982268    14.63711  92.92897  0.000047
+.._init__.py:260 BeautifulSoup.endData  6162790    40.80747  88.14678  0.000014
+..ment.py:1484 SoupStrainer.search_tag  1982511    10.07821  69.77949  0.000035
+..tion.py:162 SJISDistributionAnalysis  214        22.56522  63.18174  0.295242
+..lement.py:745 BeautifulSoup.__init__  1985329    23.88650  60.04873  0.000030
+..tion.py:91 EUCTWDistributionAnalysis  18418508   29.20532  57.21692  0.000003
+..dingStateMachine.get_current_charlen  118788720  44.26687  44.26687  0.000000
+..lement.py:1551 SoupStrainer._matches  2292485    9.375063  44.03005  0.000019
+/usr/lib/python2.7/re.py:144 sub        3556       0.016390  42.29848  0.011895
+..atin1prober.py:109 Latin1Prober.feed  254        33.77129  41.71251  0.164222
+..rober.filter_without_english_letters  3302       0.010446  39.78340  0.012048
+...py:52 SJISDistributionAnalysis.feed  86460690   37.74149  37.74379  0.000000
+.._.py:351 BeautifulSoup.handle_endtag  1982268    6.155311  36.70019  0.000019
+..nit__.py:301 BeautifulSoup._popToTag  1982268    17.45842  28.99599  0.000015
+..awler/Page.py:18 CdxPage.get_content  2821       0.043089  28.07653  0.009953
+..:290 BeautifulSoup.object_was_parsed  2883290    12.39568  25.91839  0.000009
+.._replace_cdata_list_attribute_values  1430931    14.14112  24.32381  0.000017
+..SoupStrainer._normalize_search_value  1996699    7.258432  20.21795  0.000010
+..thon2.7/abc.py:128 __instancecheck__  3967840    12.26073  19.92259  0.000005
+..-packages/bs4/element.py:648 __new__  2883290    9.187099  19.42489  0.000007
+..on2.7/socket.py:336 _fileobject.read  33111/3..  2.186696  18.74605  0.000566
+..2.7/httplib.py:534 HTTPResponse.read  32641      0.389283  18.20624  0.000558
+..ion.py:185 EUCJPDistributionAnalysis  11592681   14.87549  17.85281  0.000002
+..4/element.py:188 BeautifulSoup.setup  4868619    17.69242  17.69242  0.000004
+..er/_lxml.py:194 LXMLTreeBuilder.data  3234245    8.804277  17.44147  0.000005
+.._init__.py:251 BeautifulSoup.pushTag  1985329    11.41016  14.67308  0.000007
+..y:192 EUCJPContextAnalysis.get_order  6638977    8.490098  10.15879  0.000002
+..lib/python2.7/urllib2.py:123 urlopen  2821       0.020816  9.281234  0.003290
+..7/urllib2.py:386 OpenerDirector.open  3116/2821  0.077178  9.260004  0.002972
+..t__.py:356 BeautifulSoup.handle_data  3339322    6.024659  8.873721  0.000003
+..b2.py:374 OpenerDirector._call_chain  6527/5885  0.030051  8.714649  0.001335
+../urllib2.py:414 OpenerDirector._open  3116       0.040592  8.556141  0.002746
+..rllib2.py:1213 HTTPHandler.http_open  3116       0.026685  8.481307  0.002722
+../urllib2.py:1139 HTTPHandler.do_open  3116       0.180817  8.454622  0.002713
+..lxml.py:64 LXMLTreeBuilder._getNsTag  6622202    7.434209  7.434209  0.000001
+..__init__.py:242 BeautifulSoup.popTag  1982511    5.822580  7.186197  0.000004
+.._lxml.py:202 LXMLTreeBuilder.comment  105077     0.689135  6.757828  0.000064
+..eakrefset.py:68 WeakSet.__contains__  7932865    6.406348  6.406348  0.000001
+..b.py:1009 HTTPConnection.getresponse  3116       0.074445  5.009901  0.001608
+...7/httplib.py:402 HTTPResponse.begin  3116       0.121674  4.767576  0.001530
+..t.py:666 NavigableString.__getattr__  2883290    4.602513  4.602513  0.000002
+..thon2.7/encodings/utf_8.py:15 decode  1988196    2.139095  4.520105  0.000002
+..ent.py:918 BeautifulSoup.__nonzero__  8983384    3.932290  3.932290  0.000000
+..mimetools.py:24 HTTPMessage.__init__  3116       0.056480  3.526623  0.001132
+...7/rfc822.py:88 HTTPMessage.__init__  3116       0.019247  3.290795  0.001056
+..tplib.py:234 HTTPMessage.readheaders  3116       0.883554  3.271549  0.001050
+..ttplib.py:971 HTTPConnection.request  3116       0.014805  3.092183  0.000992
+...py:992 HTTPConnection._send_request  3116       0.053745  3.077378  0.000988
+..nt.py:1190 BeautifulSoup.descendants  4871486    3.033390  3.058358  0.000001
+..LXMLTreeBuilder.can_be_empty_element  1985329    2.968293  2.968293  0.000001
+..lib.py:956 HTTPConnection.endheaders  3116       0.012288  2.902544  0.000931
+..b.py:814 HTTPConnection._send_output  3116       0.026548  2.890256  0.000928
+..7/httplib.py:787 HTTPConnection.send  3116       0.047478  2.853458  0.000916
+..7/socket.py:406 _fileobject.readline  66681      0.839260  2.583890  0.000039
+..ebrewprober.py:188 HebrewProber.feed  254        0.011298  2.542022  0.010008
+..50 HebrewProber.filter_high_bit_only  254        0.001175  2.526708  0.009948
+..ttplib.py:769 HTTPConnection.connect  3116       0.028691  2.405765  0.000772
+..n2.7/socket.py:537 create_connection  3116       0.086268  2.377074  0.000763
+..LXMLTreeBuilder.set_up_substitutions  1985329    2.101274  2.239832  0.000001
+..XMLTreeBuilder._prefix_for_namespace  1982511    1.305813  1.305813  0.000001
+/usr/lib/python2.7/socket.py:223 meth   6232       0.049155  1.105850  0.000177
+..lib.py:363 HTTPResponse._read_status  3116       0.088398  1.038564  0.000333
+..516 HTTPErrorProcessor.http_response  3116/2821  0.014808  1.036306  0.000333
+../urllib2.py:429 OpenerDirector.error  295/243    0.004707  1.020630  0.003460
+..5 HTTPRedirectHandler.http_error_302  295/243    0.014269  1.012937  0.003434
+..lib/python2.7/Queue.py:150 Queue.get  5656/5636  0.091237  0.706004  0.000125
+..-packages/bs4/element.py:890 Tag.get  345659     0.422454  0.634179  0.000002
+.._lxml.py:197 LXMLTreeBuilder.doctype  2771       0.033885  0.583814  0.000211
+..ent.py:937 BeautifulSoup.__getattr__  2867       0.037839  0.453146  0.000158
+..2.7/threading.py:308 _Condition.wait  2842/2822  0.060426  0.422299  0.000149
+..4/element.py:1154 BeautifulSoup.find  2867       0.024037  0.400021  0.000140
+..socket.py:185 _socketobject.__init__  3116       0.348430  0.385037  0.000124
+..lement.py:1421 SoupStrainer.__init__  5685       0.075692  0.330169  0.000058
+..dammit.py:288 find_declared_encoding  2818       0.067648  0.324787  0.000115
+..7/rfc822.py:197 HTTPMessage.isheader  58704      0.199711  0.312916  0.000005
+..n2.7/urllib2.py:199 Request.__init__  3116       0.035601  0.248292  0.000080
+..7/threading.py:372 _Condition.notify  14059      0.104048  0.244082  0.000017
+..ib.py:579 HTTPResponse._read_chunked  703        0.024495  0.222468  0.000316
+..httplib.py:220 HTTPMessage.addheader  58704      0.156177  0.211641  0.000004
+..n2.7/socket.py:276 _fileobject.close  9643       0.184091  0.198255  0.000021
+...7/httplib.py:518 HTTPResponse.close  6283       0.037357  0.196600  0.000031
+..ython2.7/Queue.py:45 Queue.task_done  5636       0.055200  0.174721  0.000031
+../chardet/latin1prober.py:29 <module>  255        0.009293  0.166224  0.000652
+../python2.7/inspect.py:803 getargspec  2818       0.044415  0.165330  0.000059
+..ython2.7/urllib2.py:181 request_host  2821       0.022811  0.164367  0.000058
+..b/python2.7/urlparse.py:136 urlparse  3706       0.024961  0.157614  0.000043
+..s/bs4/element.py:902 Tag.__getitem__  306348     0.156980  0.156980  0.000001
+..lib/python2.7/Queue.py:107 Queue.put  5636       0.049515  0.153759  0.000027
+..hreading.py:299 _Condition._is_owned  16901      0.047205  0.141174  0.000008
+..lib2.py:1110 HTTPHandler.do_request_  3116       0.038047  0.141012  0.000045
+..ardet/mbcsgroupprober.py:30 <module>  255        0.018274  0.135936  0.000533
+..ageCrawlerThreaded.serialize_to_file  2818       0.047930  0.123862  0.000044
+..t__.py:38 TreeBuilderRegistry.lookup  2818       0.091904  0.122694  0.000044
+..xml.py:45 LXMLTreeBuilder.parser_for  2818       0.066891  0.122674  0.000044
+..b/python2.7/urlparse.py:167 urlsplit  3706       0.056238  0.121917  0.000033
+../__init__.py:216 BeautifulSoup.reset  2818       0.048124  0.121125  0.000043
+..4/element.py:1609 ResultSet.__init__  5685       0.103965  0.103965  0.000018
+..httplib.py:335 HTTPResponse.__init__  3116       0.034628  0.097413  0.000031
+..imetools.py:33 HTTPMessage.parsetype  3116       0.060789  0.093765  0.000030
+..et/charsetprober.py:31 CharSetProber  509        0.036620  0.091886  0.000181
+..geCrawlerThreaded.get_temporal_crawl  1          0.002638  0.090968  0.090968
+..lib/python2.7/inspect.py:743 getargs  2818       0.057916  0.090448  0.000032
+..tplib.py:637 HTTPResponse._safe_read  878        0.010587  0.086047  0.000098
+..hreading.py:399 _Condition.notifyAll  2787       0.011325  0.080735  0.000029
+../rfc822.py:285 HTTPMessage.getheader  18696      0.051038  0.079576  0.000004
+..n2.7/urllib2.py:261 Request.get_host  6232       0.018686  0.078333  0.000013
+..plib.py:945 HTTPConnection.putheader  12464      0.052551  0.076624  0.000006
+...7/socket.py:285 _fileobject.__del__  6232       0.018171  0.070538  0.000011
+../httplib.py:777 HTTPConnection.close  3116       0.017071  0.070468  0.000023
+..7/socket.py:246 _fileobject.__init__  6232       0.047214  0.066500  0.000011
+../bs4/element.py:725 for_name_and_ids  2771       0.026214  0.064834  0.000023
+..7/urllib.py:1003 addinfourl.__init__  3116       0.018338  0.063310  0.000020
+..socket.py:212 _socketobject.makefile  3116       0.019990  0.062785  0.000020
+..oralPageCrawlerThreaded.get_cdx_info  1          0.000013  0.061916  0.061916
+..ge.py:70 CdxPage.get_timestamped_url  1          0.000111  0.061828  0.061828
+..2.7/rfc822.py:209 HTTPMessage.islast  61820      0.060053  0.060053  0.000001
+..PageCrawler.py:190 TestFilter.filter  2818       0.055627  0.058061  0.000021
+..lib.py:835 HTTPConnection.putrequest  3116       0.024260  0.056190  0.000018
+..metools.py:50 HTTPMessage.parseplist  3116       0.042364  0.055367  0.000018
+..hardet/euctwprober.py:33 EUCTWProber  7621       0.040976  0.054603  0.000007
+...7/socket.py:192 _socketobject.close  3116       0.034766  0.053396  0.000017
+..s/chardet/euctwprober.py:28 <module>  3811       0.023090  0.052414  0.000014
+<string>:8 __new__                      12678      0.031425  0.051871  0.000004
+..charsetprober.py:41 SJISProber.reset  3048       0.036272  0.048305  0.000016
+..ector.py:121 UniversalDetector.close  435        0.006483  0.047410  0.000109
+..lib.py:488 HTTPResponse._check_close  3116       0.021209  0.046498  0.000015
+..n2.7/urllib2.py:254 Request.get_type  6232       0.012864  0.045952  0.000007
+../rfc822.py:219 HTTPMessage.iscomment  61820      0.045738  0.045738  0.000001
+...7/urllib.py:949 addinfourl.__init__  3116       0.032494  0.044972  0.000014
+..t-packages/bs4/element.py:69 __new__  2325       0.015776  0.044385  0.000019
+..mit.py:215 EncodingDetector.__init__  2818       0.020611  0.042116  0.000015
+..g.py:296 _Condition._acquire_restore  2822       0.009056  0.039276  0.000014
+..py:72 MBCSGroupProber.get_confidence  762        0.025884  0.037469  0.000049
+..thon2.7/urlparse.py:159 _splitnetloc  2789       0.023960  0.035112  0.000013
+..tplib.py:691 HTTPConnection.__init__  3116       0.017003  0.034850  0.000011
+..ib/python2.7/urllib.py:1166 splittag  3116       0.010152  0.033452  0.000011
+..b/python2.7/urllib.py:1064 splittype  3116       0.019187  0.033089  0.000011
+..b/python2.7/urllib.py:1078 splithost  3116       0.017160  0.032643  0.000010
+..es/chardet/sjisprober.py:28 <module>  255        0.011934  0.031738  0.000124
+..es/chardet/utf8prober.py:28 <module>  255        0.009198  0.029818  0.000117
+/usr/lib/python2.7/re.py:226 _compile   4429       0.019174  0.029812  0.000007
+..mmit.py:224 EncodingDetector._usable  11707      0.022361  0.027280  0.000002
+..lib/python2.7/urllib.py:1204 unquote  3116       0.012863  0.027004  0.000009
+..ttplib.py:807 HTTPConnection._output  15580      0.019203  0.026323  0.000002
+../python2.7/Queue.py:200 Queue._qsize  8457       0.020128  0.026277  0.000003
+..wler/Page.py:86 WayBackPage.__init__  2818       0.021072  0.024513  0.000009
+..ib/python2.7/urlparse.py:250 urljoin  295        0.003503  0.024205  0.000082
+../python2.7/urllib2.py:1168 <genexpr>  12464      0.016153  0.022059  0.000002
+..y:258 BeautifulSoup._last_descendant  2818       0.015542  0.021761  0.000008
+../dammit.py:265 strip_byte_order_mark  2818       0.018816  0.021506  0.000008
+..HTTPRedirectHandler.redirect_request  295        0.007972  0.021105  0.000072
+..rfc822.py:295 HTTPMessage.getheaders  295        0.003608  0.021070  0.000071
+..age.py:54 CdxPage.__extract_cdx_data  3          0.011624  0.020301  0.006767
+..t/jpcntx.py:191 EUCJPContextAnalysis  256        0.012859  0.019994  0.000078
+..charsetprober.py:35 UTF8Prober.reset  11938      0.019455  0.019455  0.000002
+../chardet/utf8prober.py:36 UTF8Prober  509        0.002253  0.018243  0.000036
+...py:721 HTTPConnection._set_hostport  3116       0.012694  0.017847  0.000006
+..tor.py:42 UniversalDetector.__init__  435        0.004123  0.017019  0.000039
+..28 HTTPMessage.getallmatchingheaders  295        0.010956  0.016246  0.000055
+..thon2.7/threading.py:63 Thread._note  16901      0.015516  0.015516  0.000001
+..ib/python2.7/Queue.py:208 Queue._get  5636       0.011828  0.015142  0.000003
+.._lxml.py:54 LXMLTreeBuilder.__init__  2818       0.015056  0.015056  0.000005
+..s/chardet/euckrprober.py:28 <module>  255        0.007628  0.014434  0.000057
+..ution.py:39 CharDistributionAnalysis  1525       0.014062  0.014062  0.000009
+..s/chardet/eucjpprober.py:28 <module>  255        0.002663  0.014002  0.000055
+..:293 Request.add_unredirected_header  6232       0.009626  0.013555  0.000002
+../chardet/sjisprober.py:36 SJISProber  509        0.002069  0.012974  0.000025
+../lib/python2.7/urllib.py:1055 unwrap  3116       0.010359  0.012824  0.000004
+..lib/python2.7/inspect.py:67 ismethod  2818       0.009537  0.011377  0.000004
+..n2.7/socket.py:292 _fileobject.flush  6232       0.011260  0.011260  0.000002
+..ib/python2.7/Queue.py:204 Queue._put  5636       0.008803  0.010759  0.000002
+..det/universaldetector.py:29 <module>  1          0.000482  0.010302  0.010302
+/usr/lib/python2.7/re.py:188 compile    873        0.002524  0.010231  0.000012
+..es/chardet/big5prober.py:28 <module>  255        0.003402  0.009865  0.000039
+..python2.7/urllib.py:1040 _is_unicode  3116       0.005244  0.008745  0.000003
+..tprober.py:34 MultiByteCharSetProber  4573       0.008724  0.008724  0.000002
+..rdet/chardistribution.py:28 <module>  509        0.006465  0.008604  0.000017
+../urllib2.py:248 Request.get_full_url  6232       0.008423  0.008423  0.000001
+...7/urllib2.py:231 Request.get_method  3411       0.006032  0.008221  0.000002
+../lib/python2.7/inspect.py:209 iscode  2818       0.006459  0.008035  0.000003
+../python2.7/inspect.py:142 isfunction  2818       0.006579  0.007952  0.000003
+..ngleByteCharSetProber.get_confidence  6778       0.007803  0.007803  0.000001
+..ding.py:293 _Condition._release_save  2842       0.006011  0.007786  0.000003
+..setprober.py:44 UTF8Prober.get_state  12704      0.007362  0.007362  0.000001
+..r/_lxml.py:123 LXMLTreeBuilder.close  2818       0.006583  0.006583  0.000002
+..y:218 LXMLTreeBuilder.default_parser  2818       0.006462  0.006462  0.000002
+...7/urllib2.py:297 Request.has_header  6232       0.006278  0.006278  0.000001
+..ardet/mbcharsetprober.py:30 <module>  1525       0.003590  0.006234  0.000004
+..rsetprober.py:35 SJISProber.__init__  1524       0.004746  0.005589  0.000004
+..ne.py:31 CodingStateMachine.__init__  1778       0.003923  0.005492  0.000003
+..et/charsetgroupprober.py:28 <module>  255        0.002014  0.005173  0.000020
+..tector.py:49 UniversalDetector.reset  870        0.005144  0.005144  0.000006
+..on2.7/urllib.py:967 addinfourl.close  295        0.001255  0.004814  0.000016
+../__init__.py:121 deprecated_argument  5636       0.004698  0.004698  0.000001
+..n2.7/urllib2.py:242 Request.has_data  6527       0.004666  0.004666  0.000001
+..chine.py:37 CodingStateMachine.reset  5334       0.004345  0.004345  0.000001
+..s/bs4/element.py:922 Tag.__setitem__  2383       0.004142  0.004142  0.000002
+..rober.py:32 MBCSGroupProber.__init__  6604       0.004098  0.004098  0.000001
+..python2.7/urlparse.py:222 urlunparse  590        0.002018  0.003928  0.000007
+..__init__.py:98 LXMLTreeBuilder.reset  5636       0.003849  0.003849  0.000001
+..ges/chardet/constants.py:29 <module>  255        0.001397  0.003808  0.000015
+..ober.py:69 UTF8Prober.get_confidence  598        0.002360  0.003594  0.000006
+..kcrawler/Page.py:14 CdxPage.__init__  2819       0.003441  0.003441  0.000001
+..63 SJISDistributionAnalysis.__init__  254        0.001544  0.003282  0.000013
+..python2.7/sre_compile.py:496 compile  8          0.000083  0.003178  0.000397
+..groupprober.py:31 CharSetGroupProber  509        0.002143  0.003151  0.000006
+..lPageCrawlerThreaded.__start_threads  1          0.000085  0.003128  0.003128
+..2.7/urllib2.py:280 Request.has_proxy  3116       0.002912  0.002912  0.000001
+..hon2.7/threading.py:726 Thread.start  20         0.000302  0.002883  0.000144
+..on2.7/urllib.py:1009 addinfourl.info  3116       0.002808  0.002808  0.000001
+..python2.7/urlparse.py:68 clear_cache  166        0.000349  0.002790  0.000017
+../python2.7/urllib2.py:1157 <genexpr>  3116       0.002592  0.002592  0.000001
+..wprober.py:172 HebrewProber.is_final  1542       0.002589  0.002589  0.000002
+..chardet/charsetprober.py:29 <module>  509        0.002138  0.002526  0.000005
+..r.py:122 Latin1Prober.get_confidence  254        0.001536  0.002384  0.000009
+..tin1prober.py:101 Latin1Prober.reset  254        0.001061  0.002271  0.000009
+..py:741 HTTPConnection.set_debuglevel  3116       0.002135  0.002135  0.000001
+..43 Big5DistributionAnalysis.__init__  254        0.001173  0.002050  0.000008
+..6 EUCJPDistributionAnalysis.__init__  254        0.001042  0.002017  0.000008
+..er.py:81 GB2312Prober.get_confidence  784        0.001114  0.001977  0.000003
+../urllib2.py:268 Request.get_selector  3116       0.001934  0.001934  0.000001
+..python2.7/urlparse.py:232 urlunsplit  590        0.001910  0.001910  0.000003
+..ardet/sbcharsetprober.py:29 <module>  261        0.001280  0.001904  0.000007
+..9 EUCKRDistributionAnalysis.__init__  254        0.001019  0.001878  0.000007
+.. GB2312DistributionAnalysis.__init__  254        0.000962  0.001878  0.000007
+..thon2.7/threading.py:602 _Event.wait  20         0.000142  0.001724  0.000086
+..2 EUCTWDistributionAnalysis.__init__  254        0.000806  0.001640  0.000006
+..ober.py:82 SJISProber.get_confidence  170        0.000877  0.001632  0.000010
+..lib/python2.7/sre_parse.py:674 parse  8          0.000061  0.001583  0.000198
+..b/python2.7/sre_compile.py:481 _code  8          0.000041  0.001475  0.000184
+..ython2.7/sre_parse.py:302 _parse_sub  17/8       0.000159  0.001456  0.000086
+..9 Big5DistributionAnalysis.get_order  398        0.001208  0.001422  0.000004
+..ib/python2.7/sre_parse.py:380 _parse  19/8       0.000634  0.001409  0.000074
+..7/urllib2.py:219 Request.__getattr__  243        0.001248  0.001248  0.000005
+..ckages/chardet/jpcntx.py:28 <module>  1          0.000117  0.001246  0.001246
+..SDistributionAnalysis.get_confidence  1038       0.001226  0.001226  0.000001
+..c822.py:439 HTTPMessage.__contains__  295        0.000960  0.001207  0.000004
+..:48 MBCSGroupProber.get_charset_name  254        0.000848  0.001075  0.000004
+..prober.py:41 SingleByteCharSetProber  509        0.001039  0.001039  0.000002
+..rdet/gb2312prober.py:33 GB2312Prober  2          0.000918  0.001006  0.000503
+..prober.py:264 HebrewProber.get_state  254        0.000615  0.000735  0.000003
+..python2.7/sre_compile.py:33 _compile  28/8       0.000264  0.000726  0.000026
+..2.7/sre_compile.py:362 _compile_info  8          0.000133  0.000706  0.000088
+..ber.py:175 HebrewProber.is_non_final  644        0.000692  0.000692  0.000001
+..TemporalPageCrawlerThreaded.__init__  1          0.000006  0.000628  0.000628
+../sre_compile.py:179 _compile_charset  8          0.000067  0.000623  0.000078
+..ges/chardet/euctwfreq.py:44 <module>  90         0.000493  0.000623  0.000007
+..PageCrawlerThreaded.__create_threads  1          0.000048  0.000617  0.000617
+..sre_compile.py:208 _optimize_charset  8          0.000504  0.000537  0.000067
+..2.7/threading.py:656 Thread.__init__  20         0.000103  0.000515  0.000026
+..GB2312DistributionAnalysis.get_order  433        0.000503  0.000505  0.000001
+..DistributionAnalysis.got_enough_data  371        0.000491  0.000491  0.000001
+..ython2.7/urllib2.py:454 build_opener  1          0.000030  0.000413  0.000413
+..t-packages/bs4/element.py:49 __new__  58         0.000189  0.000364  0.000006
+..wler/Page.py:40 CdxPage.__create_url  3          0.000025  0.000358  0.000119
+..b/python2.7/urllib2.py:561 <genexpr>  295        0.000354  0.000354  0.000001
+..y:168 HebrewProber.set_model_probers  254        0.000348  0.000348  0.000001
+..b/python2.7/urllib.py:1291 urlencode  3          0.000087  0.000333  0.000111
+..9 SJISDistributionAnalysis.get_order  118        0.000276  0.000324  0.000003
+..2.py:283 Request.get_origin_req_host  295        0.000320  0.000320  0.000001
+..b2.py:323 OpenerDirector.add_handler  9          0.000153  0.000307  0.000034
+..python2.7/threading.py:241 Condition  46         0.000072  0.000303  0.000007
+..on2.7/sre_parse.py:202 Tokenizer.get  86         0.000085  0.000246  0.000003
+..lib/python2.7/Queue.py:70 Queue.join  2          0.000024  0.000241  0.000120
+..threading.py:259 _Condition.__init__  46         0.000210  0.000231  0.000005
+...7/sre_parse.py:183 Tokenizer.__next  112        0.000183  0.000228  0.000002
+../python2.7/urllib.py:1284 quote_plus  22         0.000041  0.000227  0.000010
+..lib/python2.7/threading.py:541 Event  20         0.000020  0.000219  0.000011
+..sre_parse.py:141 SubPattern.getwidth  35/15      0.000170  0.000205  0.000006
+..2.7/threading.py:560 _Event.__init__  20         0.000042  0.000199  0.000010
+..on.py:125 GB2312DistributionAnalysis  255        0.000193  0.000193  0.000001
+..thon2.7/abc.py:148 __subclasscheck__  2          0.000062  0.000191  0.000096
+..er.py:47 HebrewProber.get_confidence  418        0.000188  0.000188  0.000000
+..r/lib/python2.7/urllib.py:1245 quote  22         0.000078  0.000186  0.000008
+..leByteCharSetProber.get_charset_name  164        0.000176  0.000176  0.000001
+.._parse.py:131 SubPattern.__getitem__  84         0.000106  0.000164  0.000002
+..7/threading.py:1035 Thread.setDaemon  20         0.000069  0.000159  0.000008
+..n1Prober.filter_with_english_letters  254        0.000139  0.000139  0.000001
+..ckages/bs4/element.py:952 Tag.__eq__  115        0.000108  0.000108  0.000001
+..dings/__init__.py:71 search_function  1          0.000038  0.000107  0.000107
+..2.7/sre_parse.py:196 Tokenizer.match  72         0.000050  0.000091  0.000001
+..n2.7/threading.py:1024 Thread.daemon  20         0.000078  0.000090  0.000005
+..on2.7/sre_parse.py:226 _class_escape  4          0.000063  0.000088  0.000022
+..ges/chardet/escprober.py:28 <module>  1          0.000072  0.000087  0.000087
+..ion.py:108 EUCKRDistributionAnalysis  79         0.000079  0.000079  0.000001
+..kcrawler/Page.py:33 CdxPage.__init__  1          0.000008  0.000075  0.000075
+..urllib2.py:714 ProxyHandler.__init__  1          0.000004  0.000072  0.000072
+..et/codingstatemachine.py:28 <module>  2          0.000067  0.000070  0.000035
+..rllib.py:1355 getproxies_environment  1          0.000042  0.000067  0.000067
+../threading.py:709 Thread._set_daemon  20         0.000029  0.000057  0.000003
+..n2.7/_abcoll.py:127 __subclasshook__  2          0.000011  0.000054  0.000027
+..python2.7/Queue.py:26 Queue.__init__  2          0.000010  0.000053  0.000026
+..er.py:47 UTF8Prober.get_charset_name  90         0.000051  0.000051  0.000001
+../sre_parse.py:127 SubPattern.__len__  44         0.000038  0.000050  0.000001
+..7/_weakrefset.py:58 WeakSet.__iter__  1          0.000023  0.000049  0.000049
+..b/python2.7/sre_parse.py:258 _escape  2          0.000026  0.000047  0.000023
+..7/sre_parse.py:139 SubPattern.append  34         0.000032  0.000044  0.000001
+..lib/python2.7/_abcoll.py:24 _hasattr  2          0.000020  0.000043  0.000022
+../sre_parse.py:179 Tokenizer.__init__  8          0.000016  0.000042  0.000005
+..n2.7/threading.py:58 Thread.__init__  86         0.000040  0.000040  0.000000
+..python2.7/sre_compile.py:355 _simple  7          0.000018  0.000028  0.000004
+..n2.7/threading.py:1152 currentThread  21         0.000022  0.000028  0.000001
+../chardet/gb2312prober.py:28 <module>  1          0.000025  0.000027  0.000027
+..ython2.7/sre_compile.py:475 isstring  16         0.000022  0.000026  0.000002
+...7/encodings/utf_8.py:33 getregentry  1          0.000015  0.000026  0.000026
+..2.7/threading.py:713 Thread.__repr__  1          0.000024  0.000025  0.000025
+..hon2.7/threading.py:569 _Event.isSet  41         0.000023  0.000023  0.000001
+../sre_parse.py:91 SubPattern.__init__  28         0.000022  0.000022  0.000001
+..gs/__init__.py:49 normalize_encoding  1          0.000013  0.000021  0.000021
+.. EUCTWDistributionAnalysis.get_order  4          0.000017  0.000020  0.000005
+.. EUCKRDistributionAnalysis.get_order  4          0.000017  0.000019  0.000005
+..efset.py:26 _IterationGuard.__exit__  1          0.000014  0.000018  0.000018
+..7/sre_parse.py:84 Pattern.closegroup  9          0.000012  0.000018  0.000002
+...7/sre_parse.py:73 Pattern.opengroup  9          0.000012  0.000016  0.000002
+.. EUCJPDistributionAnalysis.get_order  4          0.000013  0.000015  0.000004
+...7/urllib2.py:503 HTTPHandler.__lt__  13         0.000010  0.000014  0.000001
+..ib/python2.7/_abcoll.py:26 <genexpr>  6          0.000014  0.000014  0.000002
+../sre_compile.py:25 _identityfunction  36         0.000012  0.000012  0.000000
+..ackages/chardet/escsm.py:28 <module>  1          0.000012  0.000012  0.000012
+..hon2.7/_weakrefset.py:81 WeakSet.add  2          0.000010  0.000011  0.000006
+..r/lib/python2.7/codecs.py:77 __new__  1          0.000009  0.000011  0.000011
+../chardet/hebrewprober.py:28 <module>  1          0.000009  0.000010  0.000010
+..rdet/latin1prober.py:96 Latin1Prober  3          0.000010  0.000010  0.000003
+..2.7/sre_parse.py:68 Pattern.__init__  8          0.000010  0.000010  0.000001
+..7/_weakrefset.py:36 WeakSet.__init__  1          0.000008  0.000008  0.000008
+..threading.py:1008 _MainThread.daemon  20         0.000008  0.000008  0.000000
+..fset.py:20 _IterationGuard.__enter__  1          0.000004  0.000005  0.000005
+..TemporalPageCrawlerThreaded.__init__  1          0.000005  0.000005  0.000005
+..n2.7/sre_parse.py:206 Tokenizer.tell  2          0.000004  0.000004  0.000002
+..hon2.7/UserDict.py:40 _Environ.items  1          0.000001  0.000004  0.000004
+..n2.7/sre_parse.py:208 Tokenizer.seek  2          0.000004  0.000004  0.000002
+..geCrawler.py:186 TestFilter.__init__  1          0.000003  0.000004  0.000004
+../Page.py:49 CdxPage.__reset_page_url  2          0.000004  0.000004  0.000002
+.._parse.py:135 SubPattern.__setitem__  7          0.000003  0.000003  0.000000
+..det/escprober.py:33 EscCharSetProber  1          0.000003  0.000003  0.000003
+..ib2.py:496 UnknownHandler.add_parent  8          0.000003  0.000003  0.000000
+..llib2.py:312 OpenerDirector.__init__  1          0.000003  0.000003  0.000003
+..efset.py:52 WeakSet._commit_removals  1          0.000002  0.000002  0.000002
+..efset.py:16 _IterationGuard.__init__  1          0.000002  0.000002  0.000002
+..b/python2.7/Queue.py:197 Queue._init  2          0.000002  0.000002  0.000001
+../chardet/big5prober.py:33 Big5Prober  1          0.000002  0.000002  0.000002
+..hardet/euckrprober.py:33 EUCKRProber  1          0.000002  0.000002  0.000002
+..det/hebrewprober.py:151 HebrewProber  1          0.000001  0.000001  0.000001
+..tion.py:142 Big5DistributionAnalysis  1          0.000001  0.000001  0.000001
+TemporalPageCrawler.py:185 TestFilter   1          0.000001  0.000001  0.000001
+..urllib2.py:1104 HTTPHandler.__init__  2          0.000001  0.000001  0.000000
+..rsaldetector.py:41 UniversalDetector  1          0.000001  0.000001  0.000001
+..r/URLFilter.py:2 TestFilter.__init__  1          0.000000  0.000000  0.000000
+..ython2.7/threading.py:752 Thread.run  20         0.000000  0.000000  0.000000
+..eCrawlerThreaded.__get_urls_threaded  19         0.000000  0.000000  0.000000
+..hreaded.__serialize_to_file_threaded  1          0.000000  0.000000  0.000000
+None
+
+name           tid              ttot      scnt
+Thread         140208024561408  0.290198  155140    
+Thread         140207412188928  0.290163  158876    
+Thread         140207437367040  0.290145  150375    
+Thread         140208016168704  0.290139  163834    
+Thread         140207462545152  0.290063  151500    
+Thread         140206908888832  0.290061  139514    
+Thread         140208066524928  0.290041  168266    
+Thread         140208032954112  0.290036  163115    
+Thread         140207454152448  0.290021  160443    
+Thread         140208049739520  0.290008  157232    
+Thread         140208058132224  0.289964  163130    
+Thread         140207445759744  0.289952  158396    
+Thread         140207428974336  0.289935  163265    
+Thread         140207420581632  0.289906  148346    
+Thread         140206925674240  0.289902  139286    
+Thread         140208147445504  0.289894  169721    
+Thread         140206900496128  0.289847  5080      
+Thread         140208155838208  0.289792  186223    
+Thread         140206917281536  0.289758  141698    
+Thread         140208041346816  0.289742  164751    
+_MainThread    140208229140288  0.200794  35        
+None
