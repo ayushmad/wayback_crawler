@@ -64,6 +64,26 @@ class GraphURLFilter(TemporalPageCrawler.URLFilter):
         return filtered_urls;
 
 
+class GraphURLFilterSingleton(GraphURLFilter):
+    """
+        This is a extension of the GRaph url filter which
+        only allows one url. Hence If the url crawl is completed we remove it
+    """
+    def __init__(self, allowed_urls):
+        GraphURLFilter.__init__(self);
+        self.allowed_hostnames = self.__create_host_name_hash(allowed_urls);
+
+    def filter(self, url_list):
+        filtered_urls = [];
+        for url in url_list:
+            hostname = self.__get_hostname(url);
+            if self.allowed_hostnames.has_key(hostname) and \
+                        self.allowed_hostnames[hostname]:
+                self.allowed_hostnames[hostname] = False
+                filtered_urls.append(url);
+        return filtered_urls;
+
+
 class GraphCrawler:
     """
         Grap

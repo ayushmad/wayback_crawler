@@ -138,8 +138,8 @@ class TemporalPageCrawlerThreaded(TemporalPageCrawler):
                 self.url_job_queue.task_done();
             except Exception as e:
                 # This is a troublesome case Just protecting from code hanging here
-                print "Error for Url %s %s"%(time_stamp, original_url);
-                print e;
+                # print "Error for Url %s %s"%(time_stamp, original_url);
+                # print e;
                 self.url_job_queue.task_done();
 
 
@@ -187,6 +187,6 @@ if __name__ == "__main__":
                     result_list.append(url);
             return result_list;
 
-    print TemporalPageCrawlerThreaded("http://www.accesshollywood.com/",
+    print TemporalPageCrawlerThreaded("http://celebrities.com/",
                                       TestFilter(),
                                       "my_test.out").get_temporal_crawl();

@@ -18,7 +18,11 @@ class Page:
     
     def get_content(self):
         if not self.response_content:
-            self.response_content = urllib2.urlopen(self.url).read();
+            try:
+                self.response_content = urllib2.urlopen(self.url).read();
+            except Exception as e:
+                #TODO :- need to raise custom errors
+                pass;
         return self.response_content;
 
     def get_urls(self):
