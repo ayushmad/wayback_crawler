@@ -6,6 +6,7 @@ import urlparse
 import threading
 import Queue
 import time
+import  process_manager
 
 
 # This is a Example Use Case of the Package
@@ -164,9 +165,87 @@ class GraphCrawler:
         if self.progress_bar_thread.isAlive():
             # Trouble in paradise
             self.progress_bar_thread.stop();
-        
 
+class GraphCrawlerSimple:
+    """
+        Grap
+    """
+    def __init__(self, input_file_name, file_delimiter = "\t", start_index = 0, end_index = 2):
+        self.file_delimiter = file_delimiter;
+        self.input_hash = self.process_csv_file(input_file_name,
+                                                file_delimiter);
+        self.output_file_name = self.__make_output_file_name(
+                                        input_file_name);
+        self.start_index = start_index;
+        self.end_index = end_index;
+
+
+    def __make_output_file_name(self, input_file_name):
+        fileName, fileExtension = os.path.splitext(input_file_name);
+        return fileName + self.start_index + "_" + self.end_index + ".out";
+
+    def process_csv_file(self, in_file_name, delimiter):
+        result_hash = [];
+        with open(in_file_name, 'rb') as csv_file:
+            inp_stream = csv.DictReader(csv_file, 
+                                        delimiter = delimiter);
+            for entry in inp_stream:
+                result_hash.append(entry);
+        return result_hash;
+
+    def crawl(self):
+        my_filter = GraphURLFilter(
+                    [entry['URL'].strip() for entry in self.input_hash]);
+        node_count = 0;
+        for entry in self.input_hash:
+            if self.start_index < node_count:
+                node_count += 1;
+                continue;
+            if self.end_index > node_count:
+                break;
+            TemporalPageCrawler.TemporalPageCrawlerThreaded(
+            entry['URL'].strip(),
+            my_filter,
+            self.output_file_name).get_temporal_crawl();
+            node_count += 1;
+    
+    def process(self):
+        self.crawl()
+
+class GraphCrawlerMultiProcess:
+    def __init__(self, input_file_name, file_delimiter='\t'):
+        self.input_file_name = input_file_name;
+        self.file_delimiter = file_delimiter;
+    
+    def node_count(self, in_file_name, delimiter):
+        result_hash = [];
+        with open(in_file_name, 'rb') as csv_file:
+            inp_stream = csv.DictReader(csv_file, 
+                                        delimiter = delimiter);
+            for entry in inp_stream:
+                result_hash.append(entry);
+        return len(result_hash);
+    
+    def process(self):
+        node_count_max = self.node_count(self.input_file_name, self.file_delimiter);
+        node_count = 0;
+        jump  = 4;
+        pm = process_manager.ProcessManager();
+        pm.start_workers();
+        while node_count < node_count_max:
+            gc = GraphCrawlerSimple(self.input_file_name,
+                                    self.file_delimiter,
+                                    node_count,
+                                    node_count + jump - 1)
+            pm.add_jobs(gc)
+            node_count += jump
+        if wait:
+            while not pm.are_all_jobs_completed():
+                time.sleep(500);
+            pm.close();
+        return;
+        
 
 if __name__ == "__main__":
     # Crawling over test set
-    GraphCrawler(sys.argv[1]).crawl();
+    GraphCrawlerMultiProcess(sys.argv[1]).crawl();
